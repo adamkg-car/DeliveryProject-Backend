@@ -62,7 +62,7 @@ public class ApplicationConfig {
         return dataSource;
     }
 
-    private final Properties hibernateProperties() {
+    private static final Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
